@@ -41,7 +41,7 @@ class DB_student {
 	public function query($sql) {
 		$this->result=mysqli_query($this->conn,$sql);
 	}
-public function get_students() {
+	public function get_students() {
 
 	if($this->result) {
 			$data=mysqli_fetch_assoc($this->result);
